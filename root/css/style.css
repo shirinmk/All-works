@@ -3,26 +3,34 @@ body{
     padding: 0;
    
 }
+html,body{
+    position: relative;
+    min-width: 414px !important;
+}
 .navbar{
     position: fixed; 
     /* cause to apper on top of page  */
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center ;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     background-color: aqua;
     width: 100%;
     height: 70px;
     z-index: 1;
+    min-width: 414px;
 }
-.nav{
+/* .nav{
     display: flex;
     justify-content: right;
     list-style: none;/* remove bolet  */
-    margin-right: 15%;
-    
-}
+    /* margin-right: 15%; */
+    /* to make collapase has box of color around */
+   #box{
+    background-color: aqua;
+   } 
+
 .logo{
     flex : 1 1 auto;
     margin-left: 10%;
@@ -81,3 +89,18 @@ p{
 html{
     scroll-behavior: smooth;
 }
+
+/* media query  */
+@media (min-width: 576px) and (max-width: 613px){ 
+    li a{
+        font-size: 0.8rem;
+    }
+ }
+
+
+/* @media (min-width: 576x) and (max-width: 648px) not working */
+@media (min-width: 614px) and (max-width: 648px){ 
+    li a{
+        font-size: 0.9rem;
+    }
+ }
