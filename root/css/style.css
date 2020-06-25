@@ -15,9 +15,9 @@ html,body{
     align-items: center ;
     flex-direction: row;
     flex-wrap: wrap; */
-    background-color: aqua;
+    background-color: white;
     width: 100%;
-    height: 70px;
+    height: 78px;
     z-index: 1;
     min-width: 360px;
 }
@@ -28,7 +28,7 @@ html,body{
     /* margin-right: 15%; */
     /* to make collapase has box of color around */
    #box{
-    background-color: aqua;
+    background-color: white;
    } 
 
 .logo{
@@ -60,6 +60,9 @@ a:hover{
     background-size: cover;
 
 }
+.about-area,.contact-area{
+    background-color: #f0f0f0;
+}
 .about-area, .contact-area, .gallery-area{
   position: relative;  
   display: flex;
@@ -68,10 +71,11 @@ a:hover{
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  height: 700px;
+  height: auto; /* to include all legnth of content*/
 }
 .text-part{
-    width: 65%;
+    /* width: 65%; */
+    width: 76%;
     height: 80%;
 }
 h1{
@@ -83,12 +87,167 @@ p{
     line-height: 50px ;
 }
  .gallery-area{
-    background-color: #262626;
-    color: #fff;
+    /* background-color: #262626; */
+    /* color: #fff; */
+}
+#contact p{
+    color: white;
 }
 html{
     scroll-behavior: smooth;
 }
+
+/* bring from first css style fz site  */
+
+
+
+
+  .bg_brown{
+    background-color: #4F3328;
+    
+  }
+  .tx_white{
+      color: white !important;
+  }
+  .bg_white{
+    background-color: white !important;
+  }
+  
+  .header{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 80px;
+    color : #f17b01cc;
+    padding-top: 130px;
+    padding-left: 50px;
+  }
+  .colorhead{
+    color:#ffa856;
+  }
+
+
+  .space2{
+    letter-spacing: 0.03em;
+  }
+  .header3{
+    font-size: 25px;
+    padding-left : 30px;
+    color: white;
+  }
+ 
+  .colormid{
+    color: #2C2018;
+  
+  }
+
+  .infoFont{
+     /* font-family:'Mrs Saint Delafield', cursive; */
+     font-family: 'Kaushan Script', cursive;
+     letter-spacing: 0.03em;
+    font-size: 39px;
+    font-weight: bold;
+  
+  }
+  .infoFontinside{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+  
+  }
+  /* topDiv*/
+  
+  /* grid photo*/
+  /* Create two equal columns that floats next to each other */
+
+
+
+
+  /* .column {
+    float: left;
+    width: 45%;
+    padding: 10px;
+  } */
+  
+  .column img {
+    margin-top: 12px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #bioInside{
+    /* background-color: black; */
+    
+   
+  }
+
+  
+  /* video music header format*/
+  .header1Letter{
+    font-size: 150px;
+  }
+
+  /* .center {
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* float: left;
+    width: 50%; */
+    /*
+    this line caude the problem making
+    #bio{
+      width: 284px;
+     
+     
+    } */
+    /* bio section  */
+    .title-ltCap{
+
+      /* color: white; */
+      font-family: 'Kaushan Script', cursive;
+      font-size: 2.5em;
+    }
+    .first-ltCap{
+
+      /* color: white; */
+      font-family: 'Kaushan Script', cursive;
+      font-size: 2em;
+      letter-spacing: 0.3em;
+    }
+
+    /* contact section  */
+    .bg-black{
+      background-color: rgb(10, 10, 10);
+    }
+    .header4{
+      display: none;
+    }
+    .title-ltCap-contact{
+
+      color: white;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 1.5em;
+    }
+    .home-down{
+        margin-left:50px;
+        margin-right: 25px;
+    }
+    /* footer section  */
+    footer{
+      text-align: center;
+      background-color: black;
+    }
+    
+
+    /* media for phone  */
+    
+
+
+ 
+/* end of first css style fz site  */
 
 /* media query  */
 @media (min-width: 576px) and (max-width: 613px){ 
@@ -103,4 +262,47 @@ html{
     li a{
         font-size: 0.9rem;
     }
+
  }
+
+ @media (max-width: 695px){
+     .header{
+         font-size: 50px;
+     }
+ }
+ @media (max-width: 575px){
+    .header3{
+        display: none;
+    }
+    .header4{
+        display:block;
+        color: white;
+        padding-left: 50px;
+    }
+ }
+
+ @media (min-width: 575px){
+     .img-adj{
+         width: 60% !important;
+     }
+ }
+
+ @media (min-width: 899px) and (max-width: 986px){
+     .logo-size{
+         display: inline-block !important;
+         font-size: 18px;
+     }
+ }
+
+ @media (min-width: 840px) and (max-width: 898px){
+     .logo-size{
+        display: inline-block !important;
+         font-size: 14px;
+     }
+ }
+ @media (max-width: 839px){
+    .logo-size{
+        display: none !important;
+     }
+ }
+ 
