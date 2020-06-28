@@ -37,7 +37,7 @@ html,body{
     text-transform: uppercase;
     /* make letter uppercase  */
     letter-spacing: 1px;
-    font-weight: bold; /* text to be thick*/
+    /* font-weight: bold; text to be thick */
 
     
 }
@@ -53,7 +53,7 @@ a:hover{
 }
 .banner-area{
     position: relative;
-    background-image: url('../images/optimize/fzBack.jpg');
+    background-image: url('../images/optimize/Faramarz-Rashidi-background-piano.jpg');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ h1{
     font-family: Audiowide;
 }
 p{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 50px ;
 }
  .gallery-area{
@@ -116,7 +116,7 @@ html{
   
   .header{
     font-family: 'Kaushan Script', cursive;
-    font-size: 80px;
+    font-size: 50px;
     color : #f17b01cc;
     padding-top: 130px;
     padding-left: 50px;
@@ -188,7 +188,7 @@ html{
   
   /* video music header format*/
   .header1Letter{
-    font-size: 150px;
+    font-size: 76px;
   }
 
   /* .center {
@@ -226,6 +226,13 @@ html{
     .header4{
       display: none;
     }
+    .header5{
+      display:none;
+      color: white;
+        padding-left: 50px;
+        
+    }
+    
     .title-ltCap-contact{
 
       color: white;
@@ -241,8 +248,13 @@ html{
       text-align: center;
       background-color: black;
     }
-    
-
+    /* .logo-size{
+      display: block !important;
+   } */
+#social-footer{
+  background-color: white;
+ 
+}
     /* media for phone  */
     
 
@@ -281,17 +293,26 @@ html{
         padding-left: 50px;
     }
  }
-
+ @media (max-width: 370px){
+  .header3,.header4{
+    display: none;
+  }
+  .header5{
+    display: block;
+  }
+ }
  @media (min-width: 575px){
      .img-adj{
          width: 60% !important;
      }
  }
 
- @media (min-width: 899px) and (max-width: 986px){
+ @media (min-width: 899px){
      .logo-size{
          display: inline-block !important;
-         font-size: 18px;
+         font-size: 16px;
+         color: black;
+         padding-top: 14px;
      }
  }
 
@@ -299,11 +320,22 @@ html{
      .logo-size{
         display: inline-block !important;
          font-size: 14px;
+         color: black;
+         padding-top: 12px;
      }
  }
- @media (max-width: 839px){
+ @media (max-width: 854px){
     .logo-size{
         display: none !important;
+        color: black;
      }
+     p{
+       font-size: 18px;
+     }
+ }
+ @media (max-width: 932px){
+    #social-top{
+      display:none;
+    }
  }
  

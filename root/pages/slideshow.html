@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideshow</title>
+    <script>
+        var i = 0; //start point
+        var images = []; //array of images
+        var time = 3000;
+        images[0] = "../images/optimize/girl-play2.png";
+        images[1] = "../images/optimize/Screenshot (9).png";
+        images[2] = "../images/optimize/boy-play.mp4";
+        console.log(images);
+
+        function changeImg(){
+            document.slide.src = images[i];
+
+            if(i < (images.length-1)){
+                i++;
+            }else{
+                i=0;
+            }
+
+            setTimeout("changeImg()",time);
+
+        }
+
+        window.onload = changeImg;
+    </script>
+</head>
+<body>
+    <img name="slide" alt="" width="100%" height="400px">
+   
+</body>
+</html>
