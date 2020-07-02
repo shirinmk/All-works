@@ -252,7 +252,9 @@ html{
     .carousel-control{
      width: 0% !important;
  }
-   
+   .glyphicon-chevron-right,.glyphicon-chevron-left{
+       background-color: rgb(189, 108, 41);
+   }
     /* footer section  */
     footer{
       text-align: center;
@@ -319,6 +321,7 @@ html{
  @media (min-width: 576px){
   .img-adj{
     width: 50% !important; /* here in small screen make change*/
+    margin: 0 auto;
   }
  }
 
